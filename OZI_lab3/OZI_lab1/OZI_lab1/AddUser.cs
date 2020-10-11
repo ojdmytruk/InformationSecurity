@@ -11,8 +11,8 @@ using System.Windows.Forms;
 namespace OZI_lab1
 {
     public partial class AddUser : Form
-    {        
-        UserContext userContext = new UserContext();
+    {
+        UserCopyContext userContext = new UserCopyContext();
 
         public AddUser()
         {

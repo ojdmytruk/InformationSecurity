@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9X7NP1H9jabeRJqnSt8WySuvEvWmpaMCe6v5TeLHm8bz5wGOLiYMMr9zdWrTzT9M3CU5F3ew/lxcr+TE0WS2Cw==",
+  "dgSpecHash": "w42wP0dN/yad0aKscln7KFxWwctw8MdCYvnAN14n/9l2bMIwAHmMUBe70jPn7iiZBPa4Undyrx6oUAzCOnBzXw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\teraz\\source\\repos\\OZI_lab1\\OZI_lab2_infocollector\\OZI_lab2_infocollector.csproj",
+  "projectFilePath": "C:\\Users\\teraz\\OneDrive\\Рабочий стол\\InformationSecurity\\OZI_lab3\\OZI_lab1\\OZI_lab2_infocollector\\OZI_lab2_infocollector.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\teraz\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\teraz\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

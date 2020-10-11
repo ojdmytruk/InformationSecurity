@@ -14,7 +14,7 @@ namespace OZI_lab1
     public partial class UserControl : Form
     {
         User user = new User();
-        UserContext userContext = new UserContext();
+        UserCopyContext userContext = new UserCopyContext();
 
         public UserControl(User userObj)
         {

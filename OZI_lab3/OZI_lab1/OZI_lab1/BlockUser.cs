@@ -12,7 +12,7 @@ namespace OZI_lab1
 {
     public partial class BlockUser : Form
     {
-        UserContext userContext = new UserContext();
+        UserCopyContext userContext = new UserCopyContext();
 
         public BlockUser()
         {

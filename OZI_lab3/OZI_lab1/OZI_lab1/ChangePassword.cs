@@ -13,7 +13,7 @@ namespace OZI_lab1
     public partial class ChangePassword : Form
     {
         User user = new User();
-        UserContext userContext = new UserContext();
+        UserCopyContext userContext = new UserCopyContext();
 
         public ChangePassword(string name)
         {

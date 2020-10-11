@@ -329,11 +329,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\teraz\\source\\repos\\OZI_lab1\\OZI_lab2_infocollector\\OZI_lab2_infocollector.csproj",
+      "projectUniqueName": "C:\\Users\\teraz\\OneDrive\\Рабочий стол\\InformationSecurity\\OZI_lab3\\OZI_lab1\\OZI_lab2_infocollector\\OZI_lab2_infocollector.csproj",
       "projectName": "OZI_lab2_infocollector",
-      "projectPath": "C:\\Users\\teraz\\source\\repos\\OZI_lab1\\OZI_lab2_infocollector\\OZI_lab2_infocollector.csproj",
+      "projectPath": "C:\\Users\\teraz\\OneDrive\\Рабочий стол\\InformationSecurity\\OZI_lab3\\OZI_lab1\\OZI_lab2_infocollector\\OZI_lab2_infocollector.csproj",
       "packagesPath": "C:\\Users\\teraz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\teraz\\source\\repos\\OZI_lab1\\OZI_lab2_infocollector\\obj\\",
+      "outputPath": "C:\\Users\\teraz\\OneDrive\\Рабочий стол\\InformationSecurity\\OZI_lab3\\OZI_lab1\\OZI_lab2_infocollector\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

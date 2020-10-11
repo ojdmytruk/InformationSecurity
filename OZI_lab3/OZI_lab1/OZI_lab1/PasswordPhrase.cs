@@ -31,6 +31,7 @@ namespace OZI_lab1
                 MessageBox.Show("Поле парольної фрази не може бути пустим та складатись лише з пробілів та симвоів");
             else
                 passwordPhraseValue = textBox_passwordPhrase.Text;
+            EncryptUserInfo.CreateValue(passwordPhraseValue);
 
         }
     }
