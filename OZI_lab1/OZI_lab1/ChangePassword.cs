@@ -23,7 +23,7 @@ namespace OZI_lab1
 
         private bool IsPasswordPossible(string password)
         {
-            if ((password.Any(c => char.IsLetter(c))) && (password.Any(c => char.IsNumber(c))) && (password.Any(c => char.IsPunctuation(c))))
+            if ((password.Any(c => char.IsLetter(c))) && (password.Any(c => char.IsNumber(c))) && (password.Any(c => char.IsPunctuation(c))) && (password.Length >= 8) && (password.Length <= 20))
                 return true;
             else return false;
         }
@@ -36,13 +36,14 @@ namespace OZI_lab1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (oldPassword.Text == userContext.Users.Find(user.Name).Password.ToString())
+            var key = "gheju392pkjd902bhfj334j22030893j";
+            if (Encryption.Encrypt(key, oldPassword.Text) == userContext.Users.Find(user.Name).Password.ToString())
             {
                 if ((IsPasswordPossible(newPassword.Text) == false) && (userContext.Users.Find(user.Name).Restriction == true))
                     MessageBox.Show("Пароль має містити букви, цифри та розділові знаки");
                 else if (newPassword.Text == confirmPassword.Text)
                 {
-                    user.Password = newPassword.Text;
+                    user.Password = Encryption.Encrypt(key, newPassword.Text);
                     userContext.Users.Find(user.Name).Password = user.Password;
                     MessageBox.Show("Пароль успішно змінено");
                 }

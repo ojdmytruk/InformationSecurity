@@ -21,7 +21,7 @@ namespace OZI_lab1
 
         private bool IsPasswordPossible(string password)
         {
-            if ((password.Any(c => char.IsLetter(c))) && (password.Any(c => char.IsNumber(c))) && (password.Any(c => char.IsPunctuation(c))))
+            if ((password.Any(c => char.IsLetter(c))) && (password.Any(c => char.IsNumber(c))) && (password.Any(c => char.IsPunctuation(c))) && (password.Length>=8) && (password.Length<=20))
                 return true;
             else return false;
         }
@@ -32,7 +32,9 @@ namespace OZI_lab1
                 MessageBox.Show("Користувач з таким іменем існує");
             else if (IsPasswordPossible(password.Text))
             {
-                userContext.Users.Add(new User { Name = userName.Text, Password = password.Text, PasswordLength = password.Text.Length, Blocked = false, Restriction = true, Role = "user" });
+                var key = "gheju392pkjd902bhfj334j22030893j";
+                string passwordE = Encryption.Encrypt(key, password.Text);
+                userContext.Users.Add(new User { Name = userName.Text, Password = passwordE, PasswordLength = passwordE.Length, Blocked = false, Restriction = true, Role = "user" });
                 MessageBox.Show("Користувача додано");
             }
             else MessageBox.Show("Пароль має містити букви, цифри та розділові знаки");

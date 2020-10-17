@@ -8,16 +8,16 @@ namespace OZI_lab1
 {
     static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
+            var key = "gheju392pkjd902bhfj334j22030893j";
             UserContext db = new UserContext();
+            db.Users.Remove(db.Users.Find("olesiaDmytruk"));
+            string encryptedPassword = Encryption.Encrypt(key, "Olesia,24");
             if (db.Users.Find("olesiaDmytruk") == null)
             {
-                db.Users.Add(new User { Name = "olesiaDmytruk", Role = "admin", Password = "Olesia,24", PasswordLength = 9, Blocked = false, Restriction = true });
+                db.Users.Add(new User { Name = "olesiaDmytruk", Role = "admin", Password = encryptedPassword, PasswordLength = 9, Blocked = false, Restriction = true });
             }
             
             db.SaveChanges();

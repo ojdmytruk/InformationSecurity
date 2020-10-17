@@ -50,8 +50,8 @@ namespace OZI_lab1
 
         private bool IsPasswordValid()
         {
-
-            if (user.Password != passwordTextBox.Text)
+            var key = "gheju392pkjd902bhfj334j22030893j";
+            if (Encryption.Decrypt(key, user.Password) != passwordTextBox.Text)
             {
                 MessageBox.Show("Невірний пароль.");
                 return false;
@@ -87,8 +87,7 @@ namespace OZI_lab1
                     }                    
                     counter++;
                 }
-            }
-                
+            }              
 
         }
 
