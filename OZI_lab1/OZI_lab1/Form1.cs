@@ -84,7 +84,7 @@ namespace OZI_lab1
                     if (counter == 3)
                     {
                         Close();
-                    }                    
+                    }
                     counter++;
                 }
             }              
